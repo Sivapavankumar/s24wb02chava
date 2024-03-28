@@ -1,6 +1,6 @@
 # s24wb02chava
 Render Link : https://s24wb02chava.onrender.com
 
-Class name Ball
+Class name Bank
 
-Ball_name,Ball_brand,cost
+Bank_name,Bank_address,limit
