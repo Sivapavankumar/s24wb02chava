@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  - let results = [{Ball_name:'leather',Ball_brand:'Kookaburra',cost:17499},{Ball_name:'HardTennis',Ball_brand:'Guru',cost:90},{Ball_name:'Stumper',Ball_brand:'Fearless',cost:50}, {Ball_name:'Cork',Ball_brand:'Vintage',cost:150},{Ball_name:'Faredell',Ball_brand:'Derek',cost:30}]
+  div(class="container-fluid")
+    div(class="row")
+      each item, index in results  
+        div(class="col-sm-2",onclick=`buy(${index})`)
+          p #{item.Ball_name} 
+          p #{item.Ball_brand}
+          p #{item.cost}
+  script.
+    function buy(index) {
+    alert("You purchased item " + index);}          
