@@ -25,7 +25,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/Bank',jRouter);
 app.use('/grid', gRouter);
-app.use('/randomitem', rRouter);
+app.use('/pick', rRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
